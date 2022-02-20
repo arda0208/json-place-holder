@@ -1,4 +1,8 @@
-<div class="item" (click)="toggleShowUserId()">
+<div
+  class="item"
+  (click)="toggleShowUserId()"
+  [style.background-color]="randomColor"
+>
   <div *ngIf="showUserId; else post_id" class="item__title">
     {{ post.userId }}
   </div>
