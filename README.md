@@ -25,4 +25,6 @@ node v14.16.0
 
 # Side Notes:
 
-- Main branch cover API request and rendering on the dashboard. Added some coloring for squares red to blue.
+- Main branch covers API request and rendering on the dashboard.
+- To see bonus question you can navigate to `feature/shared-state` branch.
+- Thanks to my ultimate design skills I added some coloring to squares going from red to blue (note form a developer who cannot decide color codes therefore generate it programmatically :D )
