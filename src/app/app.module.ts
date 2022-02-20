@@ -1,3 +1,4 @@
+import { PostService } from './services/movie/post.service';
 import { MainComponent } from './pages/main/main.component';
 import { CommonsModules } from './commons/commons.module';
 import { NgModule } from '@angular/core';
@@ -16,12 +17,12 @@ const modules = [
   AppRoutingModule,
 ];
 
-//const services = [];
+const services = [PostService];
 @NgModule({
   declarations: [AppComponent, MainComponent],
   imports: [...modules],
   exports: [...modules],
-  //providers: [...services],
+  providers: [...services],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
