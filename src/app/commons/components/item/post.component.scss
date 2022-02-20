@@ -4,8 +4,11 @@
   justify-content: center;
   align-items: center;
   border: 1px solid #d3d3d3;
+  border-radius: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+  box-shadow: 2px 2px 4px #0000004d;
+
   &__title {
     font-size: 20px;
     color: white;

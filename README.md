@@ -1,27 +1,28 @@
 # JsonPlaceHolder
 
+@author Arda Yucel
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
-## Development server
+Versions:
+@angular-devkit/architect 0.1102.18
+@angular-devkit/build-angular 0.1102.18
+@angular-devkit/core 11.2.18
+@angular-devkit/schematics 11.2.18
+@angular/cli 11.2.18
+typescript 4.1.6
+node v14.16.0
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# How to run and info about project
 
-## Code scaffolding
+- Before you start run `npm install` first. After that `npm run start` or `ng serve` helps you run the application.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Build
+- Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running unit tests
+# Side Notes:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Main branch cover API request and rendering on the dashboard. Added some coloring for squares red to blue.
