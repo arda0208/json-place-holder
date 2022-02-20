@@ -1,14 +1,16 @@
 import { PostItem } from '../../../models/post-item/postItem.class';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PostService } from 'src/app/services/post';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'post-list',
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.scss'],
 })
-export class PostListComponent implements OnInit {
+export class PostListComponent implements OnInit, OnDestroy {
   public postList: PostItem[] = [];
+  private postSubscription: Subscription;
 
   constructor(private postService: PostService) {}
 
@@ -16,9 +18,15 @@ export class PostListComponent implements OnInit {
     this.subscribeToPostList();
   }
 
+  ngOnDestroy(): void {
+    this.postSubscription?.unsubscribe();
+  }
+
   private subscribeToPostList(): void {
-    this.postService.getPosts().subscribe((postItemList) => {
-      this.postList = postItemList;
-    });
+    this.postSubscription = this.postService
+      .getPosts()
+      .subscribe((postItemList) => {
+        this.postList = postItemList;
+      });
   }
 }
