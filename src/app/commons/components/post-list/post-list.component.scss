@@ -1,0 +1,17 @@
+.post-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1%;
+
+  &__item {
+    flex: 0 0 9%;
+    aspect-ratio: 1/1;
+    //padding-top: 100%;
+    /*  &::before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    } */
+  }
+}

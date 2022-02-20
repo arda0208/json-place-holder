@@ -1,14 +1,14 @@
-import { PostItem } from './../../../models/post-item/postItem.class';
+import { PostItem } from '../../../models/post-item/postItem.class';
 import { Component, OnInit } from '@angular/core';
 import { PostService } from 'src/app/services/movie';
 
 @Component({
-  selector: 'item-list',
-  templateUrl: './item-list.component.html',
-  styleUrls: ['./item-list.component.scss'],
+  selector: 'post-list',
+  templateUrl: './post-list.component.html',
+  styleUrls: ['./post-list.component.scss'],
 })
-export class ItemListComponent implements OnInit {
-  public itemList: PostItem[] = [];
+export class PostListComponent implements OnInit {
+  public postList: PostItem[] = [];
 
   constructor(private postService: PostService) {}
 
@@ -18,7 +18,7 @@ export class ItemListComponent implements OnInit {
 
   private subscribeToPostList(): void {
     this.postService.getPosts().subscribe((postItemList) => {
-      this.itemList = postItemList;
+      this.postList = postItemList;
     });
   }
 }

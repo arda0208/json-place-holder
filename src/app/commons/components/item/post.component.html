@@ -1,0 +1,8 @@
+<div class="item" (click)="toggleShowUserId()">
+  <div *ngIf="showUserId; else post_id" class="item__title">
+    {{ post.userId }}
+  </div>
+</div>
+<ng-template #post_id>
+  <div class="item__title">{{ post.id }}</div>
+</ng-template>
