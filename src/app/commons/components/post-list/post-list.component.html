@@ -1,5 +1,8 @@
-<div class="post-list" *ngIf="postList.length > 0">
-  <div *ngFor="let item of postList; let i = index" class="post-list__item">
+<div class="post-list">
+  <div
+    *ngFor="let item of postStoreService.posts$ | async; let i = index"
+    class="post-list__item"
+  >
     <post [post]="item" [index]="i"></post>
   </div>
 </div>

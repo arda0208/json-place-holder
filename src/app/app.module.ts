@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { PostStoreService } from './services/post/post-store.service';
 
 const modules = [
   CommonsModules,
@@ -17,7 +18,7 @@ const modules = [
   AppRoutingModule,
 ];
 
-const services = [PostService];
+const services = [PostService, PostStoreService];
 @NgModule({
   declarations: [AppComponent, MainComponent],
   imports: [...modules],
