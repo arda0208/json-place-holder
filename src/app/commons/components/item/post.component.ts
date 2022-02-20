@@ -25,9 +25,6 @@ export class PostComponent implements OnInit {
   private generateRandomColor(): void {
     var red = Math.floor(255 - (255 * this.index) / 100);
     var blue = Math.floor((255 * this.index) / 100);
-    // we format to css value and return
     this.randomColor = 'rgb(' + red + ',0,' + blue + ')';
-    // this.randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-    //this.randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
   }
 }

@@ -1,6 +1,6 @@
 import { PostItem } from '../../../models/post-item/postItem.class';
 import { Component, OnInit } from '@angular/core';
-import { PostService } from 'src/app/services/movie';
+import { PostService } from 'src/app/services/post';
 
 @Component({
   selector: 'post-list',

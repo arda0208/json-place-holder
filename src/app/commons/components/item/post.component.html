@@ -4,9 +4,9 @@
   [style.background-color]="randomColor"
 >
   <div *ngIf="showUserId; else post_id" class="item__title">
-    {{ post.userId }}
+    {{ post?.userId }}
   </div>
 </div>
 <ng-template #post_id>
-  <div class="item__title">{{ post.id }}</div>
+  <div class="item__title">{{ post?.id }}</div>
 </ng-template>

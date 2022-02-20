@@ -1,4 +1,4 @@
-import { PostService } from './services/movie/post.service';
+import { PostService } from './services/post/post.service';
 import { MainComponent } from './pages/main/main.component';
 import { CommonsModules } from './commons/commons.module';
 import { NgModule } from '@angular/core';

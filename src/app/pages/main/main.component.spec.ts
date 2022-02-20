@@ -25,16 +25,4 @@ describe('MainComponent', () => {
   it('should create MainComponent', () => {
     expect(component).toBeTruthy();
   });
-
-  it('should be created ngOnInit() function', () => {
-    expect(component.ngOnInit).toBeTruthy();
-  });
-
-  it('should be created ngOnDestroy() function', () => {
-    expect(component.ngOnDestroy).toBeTruthy();
-  });
-
-  it('should be created onPaginationChanged() function', () => {
-    expect(component.onPaginationChanged).toBeTruthy();
-  });
 });
