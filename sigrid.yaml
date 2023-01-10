@@ -1,0 +1,20 @@
+partner: "sig"
+customer: "sigdev"
+system: "exploration-day"
+model: "2022"
+repository: "eu-central"
+default_excludes: true
+component_depth: 1
+languages:
+- name: "Angularjstemplate"
+- name: "Sass"
+- name: "Typescript"
+
+dependencychecker:
+  enabled: true
+
+architecture:
+  enabled: true
+
+thirdpartyfindings:
+  enabled: true
