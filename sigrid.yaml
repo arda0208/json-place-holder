@@ -12,6 +12,7 @@ languages:
 
 dependencychecker:
   enabled: true
+  blacklist: []
 
 architecture:
   enabled: true
